@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="7dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/textViewTitle"
+       app:layout_constraintBottom_toTopOf="@id/editTextNumberCount"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       android:textAllCaps="true"
+       android:textColor="#FF9900"
+       android:textStyle="bold"
+       android:textSize="30sp"
+       android:text="game lô tô"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       tools:ignore="MissingConstraints" />
+
+   <EditText
+       android:id="@+id/editTextNumberCount"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Ví dụ : 100"
+       app:layout_constraintBottom_toTopOf="@+id/bottonRao"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+       tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+   <Button
+       android:id="@+id/bottonRao"
+       app:layout_constraintEnd_toStartOf="@id/bottonReset"
+       app:layout_constraintBottom_toBottomOf="@+id/guideline"
+       app:layout_constraintTop_toBottomOf="@+id/editTextNumberCount"
+       app:layout_constraintStart_toEndOf="@id/bottonAdd"
+       android:textStyle="bold"
+       android:textSize="20sp"
+       android:text="rao"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+   <Button
+       android:id="@+id/bottonReset"
+       app:layout_constraintStart_toEndOf="@+id/bottonRao"
+       app:layout_constraintBottom_toBottomOf="@+id/guideline"
+       app:layout_constraintTop_toBottomOf="@+id/editTextNumberCount"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:textStyle="bold"
+       android:textSize="20sp"
+       android:text="chơi lại"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+   <Button
+       app:layout_constraintBottom_toTopOf="@id/guideline"
+       app:layout_constraintTop_toBottomOf="@id/editTextNumberCount"
+       app:layout_constraintEnd_toStartOf="@+id/bottonRao"
+       app:layout_constraintStart_toStartOf="parent"
+       android:id="@+id/bottonAdd"
+       android:textStyle="bold"
+       android:textSize="20sp"
+       android:text="Thêm số"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+   <androidx.constraintlayout.widget.Guideline
+       android:id="@+id/guideline"
+      app:layout_constraintGuide_percent="0.4"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+   <ScrollView
+       app:layout_constraintVertical_bias="0"
+       app:layout_constraintTop_toBottomOf="@+id/guideline"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:id="@+id/scrollView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       tools:ignore="MissingConstraints">
+      <TextView
+          android:text="Việc lập dàn ý bài văn nghị luận giúp việc tìm và lựa chọn ý cho bài viết có nội dung toàn diện, phong phú, bám sát đề, làm nổi bật trọng tâm của bài viết. Việc lập dàn ý giúp bao quát, kiểm soát được nội dung chủ yếu, những luận điểm, luận cứ cần triển khai, phạm vi và mức độ nghị luận,… ra saoViệc lập dàn ý bài văn nghị luận giúp việc tìm và lựa chọn ý cho bài viết có nội dung toàn diện, phong phú, bám sát đề, làm nổi bật trọng tâm của bài viết. Việc lập dàn ý giúp bao quát, kiểm soát được nội dung chủ yếu, những luận điểm, luận cứ cần triển khai, phạm vi và mức độ nghị luận,… ra sao.Việc lập dàn ý bài văn nghị luận giúp việc tìm và lựa chọn ý cho bài viết có nội dung toàn diện, phong phú, bám sát đề, làm nổi bật trọng tâm của bài viết. Việc lập dàn ý giúp bao quát, kiểm soát được nội dung chủ yếu, những luận điểm, luận cứ cần triển khai, phạm vi và mức độ nghị luận,… ra saoViệc lập dàn ý bài văn nghị luận giúp việc tìm và lựa chọn ý cho bài viết có nội dung toàn diện, phong phú, bám sát đề, làm nổi bật trọng tâm của bài viết. Việc lập dàn ý giúp bao quát, kiểm soát được nội dung chủ yếu, những luận điểm, luận cứ cần triển khai, phạm vi và mức độ nghị luận,… ra sao.Việc lập dàn ý bài văn nghị luận giúp việc tìm và lựa chọn ý cho bài viết có nội dung toàn diện, phong phú, bám sát đề, làm nổi bật trọng tâm của bài viết. Việc lập dàn ý giúp bao quát, kiểm soát được nội dung chủ yếu, những luận điểm, luận cứ cần triển khai, phạm vi và mức độ nghị luận,… ra sao.Việc lập dàn ý bài văn nghị luận giúp việc tìm và lựa chọn ý cho bài viết có nội dung toàn diện, phong phú, bám sát đề, làm nổi bật trọng tâm của bài viết. Việc lập dàn ý giúp bao quát, kiểm soát được nội dung chủ yếu, những luận điểm, luận cứ cần triển khai, phạm vi và mức độ nghị luận,… ra sao..."
+          android:textColor="#000"
+          android:textSize="18sp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+   </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
