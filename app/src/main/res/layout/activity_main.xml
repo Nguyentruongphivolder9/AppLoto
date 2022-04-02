@@ -19,10 +19,11 @@
        android:textSize="30sp"
        android:text="game lô tô"
        android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       tools:ignore="MissingConstraints" />
+       android:layout_height="wrap_content" />
 
    <EditText
+       android:maxLength="3"
+       android:inputType="number"
        android:id="@+id/editTextNumberCount"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
@@ -30,8 +31,7 @@
        app:layout_constraintBottom_toTopOf="@+id/bottonRao"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-       tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+       app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
 
    <Button
        android:id="@+id/bottonRao"
@@ -43,8 +43,7 @@
        android:textSize="20sp"
        android:text="rao"
        android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+       android:layout_height="wrap_content" />
 
    <Button
        android:id="@+id/bottonReset"
@@ -56,8 +55,7 @@
        android:textSize="20sp"
        android:text="chơi lại"
        android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+       android:layout_height="wrap_content"/>
 
    <Button
        app:layout_constraintBottom_toTopOf="@id/guideline"
@@ -69,14 +67,13 @@
        android:textSize="20sp"
        android:text="Thêm số"
        android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+       android:layout_height="wrap_content" />
 
    <androidx.constraintlayout.widget.Guideline
        android:id="@+id/guideline"
-      app:layout_constraintGuide_percent="0.4"
+       app:layout_constraintGuide_percent="0.4"
        android:orientation="horizontal"
-       android:layout_width="match_parent"
+       android:layout_width="wrap_content"
        android:layout_height="wrap_content"/>
 
    <ScrollView
@@ -85,11 +82,10 @@
        android:layout_height="wrap_content"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.538"
+       app:layout_constraintHorizontal_bias="0"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toBottomOf="@+id/guideline"
-       app:layout_constraintVertical_bias="0.0"
-       tools:ignore="MissingConstraints">
+       app:layout_constraintVertical_bias="0">
 
       <TextView
           android:id="@+id/textViewResult"
